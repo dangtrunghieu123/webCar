@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* header */
+.onHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px 0;
+}
+.onHeader .title h2{
+    font-size:20px;
+    font-weight:100;
+    color:gray;
+}
+.onHeader ul{
+    display:flex;
+    list-style: none;
+    margin-bottom:0;
+}
+.onHeader ul li{
+    margin-right:20px;
+    
+}
+.onHeader ul li a{
+    color:gray;
+
+}
+header{
+    background: #007cc3;
+}
+header nav ul li a{
+    color:white;
+    font-size:20px;
+}
+header nav ul li{
+    padding:7px 20px;
+    text-align: center;
+    border-right:1px solid white;
+
+}
+header nav ul li:hover >a{
+    color:white;
+    /* margin: 0;
+    padding:0;
+    border:1px solid white; */
+}
+header nav ul li:last-child{
+    border:none;
+}
+header .navbar{
+    padding:0;
+}
+header nav .navbar-brand{
+    padding:0;
+}
+header nav .navbar-brand img{
+    height:100%;
+    width: 70px;
+}
+/* .mydropdown{
+    position: relative;
+} */
+.dropdown-menu::after{
+    content:'';
+    border-bottom:15px solid white;
+    border-left:15px solid transparent;
+    border-right:15px solid transparent;
+    position:absolute;
+    top:-15px;
+    left:35%;;
+
+}
+
+
+.fixed {
+	position: fixed;
+    top: 0;
+    width: 100%;
+	z-index: 1;
+}
+
+/* all product */
+.page{
+    background: #F5F5F5;
+    font-size:20px;
+    font-weight:100;
+    padding:5px 0;
+}
+.page p{
+    margin-bottom:0;
+}
+#allCar .cardContent img{
+    width: 100%;
+    height:220px;
+    /* position: relative; */
+}
+#allCar .cardContent .cardBody .code_price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-top:1px solid rgba(0,0,0,.125); */
+    border-bottom:1px solid rgba(0,0,0,.125);
+}
+#allCar .cardContent .cardBody h3{
+    margin-bottom: 0;
+}
+#allCar .cardContent .cardBody >p{
+    margin-bottom: 0;
+    color:gray;
+}
+#allCar .cardContent .cardBody .code_price p{
+   margin-bottom:0;
+   padding-bottom:10px;
+}
+#allCar .cardContent .cardBody .button{
+    margin-top:20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#allCar .cardContent .cardBody .button button:last-child{
+    border-radius: 50%;
+    border-color: rgba(0,0,0,.125);
+    background: none;
+    color:gray;
+    font-size:22px;
+}
+#allCar  .col-3{
+    padding-right:0;
+}
+#allCar .cardContent .cardBody{
+    position: relative;
+}
+#allCar .cardContent .cardBody:after{
+    position: absolute;
+    top:0;
+    right:2%;
+    content: '';
+    width: 70%;
+    height:1px;
+    background: radial-gradient(ellipse at top,gray 0%, rgba(255, 255, 255, 0) 70%);
+}
+#allCar .cardContent{
+    background: #F5F5F5;
+    
+}
+.Title{
+    text-align: center;
+    padding-top:20px;
+   
+}
+ .Title h1{
+    font-size:50px;
+    font-weight:100;
+}
