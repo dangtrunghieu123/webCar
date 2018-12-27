@@ -117,5 +117,8 @@ class Home extends CI_Controller {
 	public function product(){
 		$this->load->view('product');
 	}
+	public function userLogin(){
+		$this->load->view('userLogin');
+	}
 
 }

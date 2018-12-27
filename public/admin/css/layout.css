@@ -91,7 +91,7 @@ header nav .navbar-brand img{
     width: 100%;
 }
 #myCarousel .img{
-    height:480px;
+    height:550px;
     width: 100%;
 }
 
@@ -161,6 +161,9 @@ header nav .navbar-brand img{
 }
 
 /* product */
+.myOwl1{
+    z-index: 0;
+}
 .myOwl1 .owlItem .cardImg img{
     height:200px;
     width: 100%;

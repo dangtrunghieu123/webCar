@@ -94,9 +94,30 @@ header nav .navbar-brand img{
 .page p{
     margin-bottom:0;
 }
+.allProduct{
+    background:#F5F5F5;
+    padding:100px 0;
+    margin-top:46px;
+    position: relative;
+}
+.allProduct:after{
+    content: '';
+    position: absolute;
+    top:-40px;
+    left:47%;
+    width: 80px;
+    height:80px;
+    transform: rotate(45deg);
+    background: white;
+}
+#allCar .cardContent:hover{
+    transition:all 0.5s;
+    transform: translateY(-10px);
+    box-shadow: 5px  5px 5px #EEEED1;
+}
 #allCar .cardContent img{
     width: 100%;
-    height:220px;
+    height:210px;
     /* position: relative; */
 }
 #allCar .cardContent .cardBody .code_price{
@@ -108,6 +129,11 @@ header nav .navbar-brand img{
 }
 #allCar .cardContent .cardBody h3{
     margin-bottom: 0;
+    
+}
+#allCar .cardContent .cardBody h3 a{
+    /* color:black; */
+    text-decoration: none;
 }
 #allCar .cardContent .cardBody >p{
     margin-bottom: 0;
@@ -146,7 +172,7 @@ header nav .navbar-brand img{
     background: radial-gradient(ellipse at top,gray 0%, rgba(255, 255, 255, 0) 70%);
 }
 #allCar .cardContent{
-    background: #F5F5F5;
+    /* background: #F5F5F5; */
     
 }
 .Title{
@@ -157,4 +183,271 @@ header nav .navbar-brand img{
  .Title h1{
     font-size:50px;
     font-weight:100;
+}
+
+/* pagination */
+.page-item.active .page-link{
+    z-index: 0;
+}
+.page-link{
+    outline: none;
+}
+
+/* unkown */
+.unknown{
+    position: relative;
+    padding-top:100px;
+}
+.unknown::after{
+    z-index: -1;
+    position: absolute;
+    content: '';
+    bottom: 3.1%;
+    left:0;
+    width: 100%;
+    height:35%;
+    background: #00BFFF;
+}
+.unknown::before{
+    z-index: -1;
+    position: absolute;
+    content: '';
+    top:0;
+    left:0%;
+    width: 70%;
+    height:2px;
+    background: radial-gradient(ellipse at top,gray 0%, rgba(255, 255, 255, 0) 70%);
+}
+.unknown right{
+    position: relative;
+}
+.unknown .right .text{
+    position: absolute;
+    top:-5%;
+    left:25%;
+}
+.unknown .right .text h3{
+    font-size:40px;
+
+}
+.unknown .right .text p{
+    color:gray;
+    font-size:25px;
+}
+/* top cars */
+#topCar{
+    padding-bottom:70px ;
+    padding-top:30px ;
+}
+#topCar .Title{
+    padding:20px 0;
+}
+#topCars{
+    z-index: 0;
+    position: relative;
+}
+#topCars .left img{
+    width: 100%;
+    height:200px;
+}
+#topCars .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#topCars .right .contentCar{
+    padding:20px;
+}
+#topCars .right .contentCar >span{
+    color:blue;
+    font-size:20px;
+}
+#topCars .right .contentCar h2{
+    text-transform: uppercase;
+    font-size:25px;
+    padding:10px 0;
+}
+#topCars .right .contentCar p{
+    color:gray;
+}
+#topCars .right .contentCar p a{
+    text-transform: uppercase;
+}
+
+#topCars .item{
+  
+    background:#EEEED1;
+    padding:20px 0;
+    
+}
+#topCars .item .rowItem .left{
+    overflow: hidden;
+    padding:0;
+}
+#topCars .item .rowItem .left:hover img{
+    animation: animateScale 1s forwards;
+}
+#topCars .item .rowItem{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding:0 20px;
+}
+#topCars .owl-dots{
+    position: absolute;
+    bottom:20px;
+    right:20%;
+}
+#topCars .owl-dots .owl-dot.active span{
+    background:#0000BB;
+}
+#topCars .owl-dots .owl-dot span{
+    background:#6666FF;
+}
+#topCars .owl-dots .owl-dot span:hover{
+    background:#0000BB;
+}
+@keyframes animateScale{
+    0%{
+       /* opacity: 1; */
+        /* transform: rotateY(180deg); */
+        transform: scale(1)
+    }
+   100%{
+     /* opacity: 1; */
+        /* transform: rotateY(360deg); */
+        transform: scale(1.2)
+    }
+}
+
+
+/* new cars */
+#newCars{
+    position: relative;
+}
+#newCars::after{
+    z-index: -1;
+    position: absolute;
+    content: '';
+    top:0;
+    right:0%;
+    width: 70%;
+    height:2px;
+    background: radial-gradient(ellipse at top,gray 0%, rgba(255, 255, 255, 0) 70%);;
+}
+#newCars .img .cardContent img{
+    width:100%;
+    height:220px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#newCars .img .cardContent .cardBody p{
+    margin-bottom:0;
+}
+#newCars .img .cardContent .cardBody .codePrice{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#newCars .img .cardContent{
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+#newCars .img .cardContent:hover .viewMore{
+    transform: translate(0);
+}
+#newCars .img .cardContent .imghover{
+    overflow: hidden;
+}
+#newCars .img .cardContent:hover img{
+    animation: animateScale 1s forwards;
+}
+#newCars .img{
+    margin-top:20px;
+}
+#newCars .img .cardContent .viewMore{
+    border-radius: 5px;
+    position: absolute;
+    left:0;
+    top:0%;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-100%);
+    /* opacity: 0; */
+    transition: all 1s;
+}
+#newCars .img .cardContent .viewMore .text p{
+    color:white;
+    border-bottom:1px solid white;
+}
+
+
+/* accessories */
+#accessories{
+    margin:100px 0;
+}
+#accessories .contentFluid{
+    width:90%;
+    margin:auto;
+    background:#F5F5F5;
+    padding-bottom:30px ;
+}
+#accessories .contentFluid .Title p{
+    font-size:30px;
+    font-weight:100;
+    color:gray;
+    margin-bottom: 15px;
+}
+#accessories .contentFluid .sericeItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding:10px 5px;
+    margin:10px 0;
+    height:90px;
+}
+#accessories .contentFluid .sericeItem .left img:first-child{
+    display: none;
+}
+#accessories .contentFluid .sericeItem:hover .left img:first-child{
+    display: block;
+}
+#accessories .contentFluid .sericeItem:hover .left img:last-child{
+    display: none;
+}
+#accessories .contentFluid .sericeItem:hover .right {
+    color:white ;
+}
+#accessories .contentFluid .sericeItem:hover{
+    background: #152360;
+}
+#accessories .contentFluid .sericeItem .right{
+    text-align: center;
+    font-size:20px;
+}
+
+/* end */
+.end{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    padding-top:20px;
+    background:#0000CD;
+}
+ .end ul{
+    display: flex;
+    list-style: none;
+    
+}
+ .end ul li{
+    margin-right:10px;
+}
+.end ul li img{
+    height:40px;
 }

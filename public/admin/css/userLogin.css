@@ -1,0 +1,97 @@
+/* background */
+
+.background{
+    width: 100%;
+    height:100vh;
+}
+
+canvas{
+    z-index: 0;
+    display:block;
+    vertical-align:bottom;
+    position: absolute;
+    top:0;
+    left:0;
+  }
+  
+  #particles-js{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* background-color: #b61924; */
+    background-image: linear-gradient(to bottom right, #00FFFF 35%, #00FF00);
+    /* background-image: url(''); */
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  .myForm{
+    width: 500px;
+    z-index: 100;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
+  .myForm .card .btnLR button{
+    width: 50%;
+    font-size:25px;
+    font-weight:100;
+    padding:10px 20px;
+    text-align: center;
+    border-radius: 0;
+    /* outline: none; */
+  }
+  .myForm .card .btnLR {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* form login */
+  .myForm .card .btnLR .login{
+    
+  }
+  .FormLogin input,.FormLogin textarea{
+    margin-top:30px;
+    width: 100%;
+    height:30px;
+    border:none;
+    border-bottom:1px solid blueviolet;
+    background: transparent;
+    outline: none;
+  }
+ .FormLogin label{
+    pointer-events: none;
+    position: absolute;
+    top:28px;
+    left:0px;
+    color:gray;
+    font-size:20px;
+    font-weight:100;
+    transition:all 0.3s;
+  }
+  .FormLogin .UserName{
+    position: relative;
+  }
+.FormLogin .PassWord{
+    position: relative;
+  }
+  .FormLogin .Email{
+    position: relative;
+  }
+  .FormLogin .PhoneNumber{
+    position: relative;
+  }
+  
+ 
+   .FormLogin input:focus ~ label{
+    color: red;
+    transform: translateY(-20px);
+    font-size:15px;
+  }
+
+ .loginSubmit{
+   
+ }
